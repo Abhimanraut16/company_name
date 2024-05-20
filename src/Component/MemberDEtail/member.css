@@ -1,0 +1,51 @@
+.member {
+   box-shadow: 0 1px 4px 0 rgb(170, 169, 169);
+   padding: 1px;
+   width: 80%;
+}
+
+.header-main .right {
+   flex: 1;
+}
+
+form {
+   position: relative;
+   /* margin-left: 360px; */
+   margin-right: 20px;
+   border-radius: 10px;
+   background-color: rgb(190, 184, 184);
+}
+
+.search input {
+   /* line-height: 3.25em; */
+   padding: 5px 20px;
+   border: 0;
+   outline: 0;
+   width: 100%;
+   border-radius: 10px;
+   font-size: 1em;
+   font-weight: 300;
+   background-color: rgb(190, 184, 184);
+}
+
+.search :where(span, button) {
+   position: absolute;
+   top: 0;
+   padding: 2px 9px;
+   font-size: 20px;
+   color: wheat;
+   height: 100%;
+}
+
+.search button {
+   right: 0;
+   border: 0;
+   outline: 0;
+   font-size: 0.876em;
+   font-weight: 600;
+   /* background-color: rgb(190, 184, 184); */
+   
+   color: white;
+   border-radius: 0 7px 7px 0;
+   cursor: pointer;
+}

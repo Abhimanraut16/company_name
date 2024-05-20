@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: black;
+    height: 500vh;
+    /* width: 20%; */
+    float: left;
+    color: white;
+
+
+
+}
+
+
+#sidemenu {
+    background-color: rgb(40, 37, 37);
+
+
+}
+
+li {
+    background-color: rgb(40, 37, 37);
+}
+
+
+
+ul {
+    width: 225px;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+
+
+
+
+}
+
+ul li {
+    list-style: none;
+    width: 140px;
+    height: 40px;
+    /* position: relative; */
+
+
+}
+
+ul ul {
+    display: none;
+    top: 0;
+}
+
+ul ul li {
+    padding: 0 10px 0 0;
+
+
+}
+
+ul li:hover>ul {
+    display: block;
+    width: 100%;
+}
+
+
+ul li {
+    display: inline-block;
+    /* margin: 10px 0px; */
+    padding: 10px;
+
+
+    background-color: rgb(40, 37, 37);
+    width: 100%;
+}

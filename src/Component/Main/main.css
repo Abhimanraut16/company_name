@@ -1,0 +1,38 @@
+.middle {
+    height: 100vn;
+    width: 80%;
+    float: left;
+    color: white;
+    background-color: rgb(236, 231, 231);
+
+}
+
+.count {
+    font-size: 16px;
+    padding: 0 30px;
+
+}
+
+.dataCount {
+    padding: 0 30px;
+}
+
+.showdo {
+    border-top: 20px rgb(236, 231, 231) solid;
+}
+
+.mainCount {
+    /* height: 100vh; */
+    height: 420px;
+
+
+
+}
+
+.pen, .transh {
+    font-size: 10px;
+    padding: 7px 10px;
+    
+
+}
+
