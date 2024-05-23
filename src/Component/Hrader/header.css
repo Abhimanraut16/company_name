@@ -1,24 +1,55 @@
-.cursor {
+.sign {
     cursor: pointer;
+    background-color: #fff;
+    color: black;
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    /* line-height: 30px; */
+    border-radius: 5px;
+    padding-bottom: 1px;
+    font-size: 15px;
+    padding: 4px 0px;
+
+}
+
+.company{
+    color: #fff;
+    font-weight: 500;
+}
+.sign:hover {
+    background-color: lightskyblue;
+    color: #fff;
+
 }
 
 .user {
     display: flex;
-    width: 28px;
-    height: 25px;
-    margin: 0px 20px;
+    width: 40px;
+    height: 30px;
+    margin: 0px 15px;
     background-color: white;
     color: black;
 
-}
-.user:hover{
-    background-color: tomato !important;
 
 }
-.icon{
+
+.user i {
+    padding: 3px 0 0 4px;
+
+}
+
+.user:hover {
+    /* color: rgba(113, 99, 186, 255); */
+    /* color: black; */
+    background-color: lightskyblue;
+
+}
+
+.icon {
     display: flex;
     position: absolute;
-    right: 100px;
+    right: 20px;
     top: 15px;
     line-height: 20px;
 }

@@ -47,8 +47,8 @@ function Navbar() {
                                     <>
                                         {isOpen && (
                                             <div   className='element' style={{ display: isOpens ? "block" : "none" }}>
-                                                <Link to=""> element1</Link>
-                                                <Link to=""> element1</Link>
+                                                <Link className='element-count' to=""> element1</Link>
+                                                <Link className='element-count' to=""> element1</Link>
                 
                                             </div>
                                         )}

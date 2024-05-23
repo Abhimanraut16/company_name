@@ -18,7 +18,7 @@ form {
 
 .search input {
    /* line-height: 3.25em; */
-   padding: 5px 20px;
+   padding: 5px 30px;
    border: 0;
    outline: 0;
    width: 100%;
@@ -26,6 +26,7 @@ form {
    font-size: 1em;
    font-weight: 300;
    background-color: rgb(190, 184, 184);
+   
 }
 
 .search :where(span, button) {
@@ -50,26 +51,7 @@ form {
    cursor: pointer;
 }
 
-.main--content{
-   position: relative;
-   background: #ebe9e9;
-   width: 100%;
-   padding: 1rem;
+.member-detail {
+   font-weight: 500;
 }
-.header--wrapper .pluse{
-   width: 50px;
-   height: 50px;
-   cursor: pointer;
-   border-radius: 50%;
-   background-color: tomato;
-   padding: 10px 17px;
-}
-.header--wrapper{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
-
-}
-
 

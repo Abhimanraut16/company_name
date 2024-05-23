@@ -5,27 +5,14 @@
 }
 
 .main {
-    background-color: black;
-    height: 300vh;
-    /* width: 20%; */
+    background-color: rgba(113, 99, 186, 255);
+    height: 200vh;
+    /* width: 15%; */
     float: left;
     /* color: white; */
-cursor: pointer;
-
-
-
+    transition: all 0.5s ease-in;
+    cursor: pointer;
 }
-
-
-#sidemenu {
-    background-color: rgb(40, 37, 37);
-
-
-}
-
-
-
-
 
 ul {
     width: 225px;
@@ -36,10 +23,6 @@ a {
     text-decoration: none;
     color: white;
     /* padding: 6px; */
-
-
-
-
 }
 
 ul li {
@@ -47,8 +30,6 @@ ul li {
     width: 140px;
     height: 40px;
     /* position: relative; */
-
-
 }
 
 ul ul {
@@ -59,14 +40,12 @@ ul ul {
 ul ul li {
     padding: 0 10px 0 0;
 
-
 }
 
 ul li:hover>ul {
     display: block;
     width: 100%;
 }
-
 
 ul li {
     display: inline-block;
@@ -76,12 +55,11 @@ ul li {
 }
 
 .sidebar {
-    background-color: black;
+    background-color: rgba(113, 99, 186, 255);
     color: #fff;
-    height: 100vh;
-    width: 400px;
+    /* height: 100vh; */
     transition: all 0.5s;
-    
+
 }
 
 .top_section {
@@ -93,31 +71,55 @@ ul li {
 
 .logo {
     font-size: 30px;
+
 }
 
 .bars {
     display: flex;
     font-size: 25px;
+    /* width: 20px; */
     /* margin-left: 10px !important; */
 }
 
-.link div{
+.bars:hover {
+    background-color: lightskyblue;
+
+}
+
+.link div {
     display: flex;
     color: #fff;
     padding: 10px 0;
     gap: 15px;
     transition: all 0.5s;
 }
-.link div:hover{
+
+.link div:hover {
     background-color: lightskyblue;
     color: black;
     transition: all 0.5s;
 }
-.actice{
+
+.actice {
     background-color: lightskyblue;
     color: black;
+
 }
-.link_text{
+
+.link_text {
     font-size: 20px;
 }
 
+.element {
+    /* width: 100px; */
+    /* padding: 10px 0; */
+    gap: 15px;
+    transition: all 0.5s;
+    display: block;
+
+}
+
+.element-count:hover {
+    color: rgba(113, 99, 186, 255);
+
+}

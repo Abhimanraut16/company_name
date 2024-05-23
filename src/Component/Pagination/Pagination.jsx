@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 function Pagination() {
   return (
     <div>
-      <nav aria-label="">
-        <ul className="pagination">
+      <nav aria-label="" className=' d-grid px-5 mx-5 justify-content-end'>
+        <ul className="pagination mx-5 ">
           <li className="page-item disabled">
             <span className="page-link">Previous</span>
           </li>
