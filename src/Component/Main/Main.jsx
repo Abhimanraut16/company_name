@@ -1,54 +1,53 @@
 import React from 'react'
 import './main.css'
 import Data from '../Data'
-import Pagination from '../Pagination/Pagination'
-// import { Link } from 'react-router-dom'
+import './media.css'
 
 function Main() {
     return (
         <div>
+            <div className="row bg-white fw-bold text-black  showdo">
 
-            <div class="middle">
-                <div className="container mainCount">
-                    <div className="row bg-white fw-bold text-black p-3 showdo">
-                        <div className="col-1 count">SN</div>
-                        <div className="col-2 count">Member Name</div>
-                        <div className="col-2 count">Gender</div>
-                        <div className="col-2 count">Address</div>
-                        <div className="col-2 count">Mobile no</div>
-                        <div className="col-2 count">Salary</div>
-                        <div className="col-1 count">Action</div>
+                <div className="tabular--wrapper">
+                    <div className="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SN</th>
+                                    <th>member Name</th>
+                                    <th>Address</th>
+                                    <th>Mobile no</th>
+                                    <th>Gender</th>
+                                    <th>Salary</th>
+                                    <th>Action</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {Data.map((d) =>
+                                    <tr>
+                                        <td>{d.id}</td>
+                                        <td>{d.names}</td>
+                                        <td>{d.Address}</td>
+                                        <td>{d.Mobile_no}</td>
+                                        <td>{d.Gender}</td>
+                                        <td>{d.Salary}</td>
+                                        <td className='d-grid gap-1 d-md-flex justify-content-md-center'>
+                                            <button class="btn btn-primary  rounded-circle pen " type="button"><i class="fa-solid fa-pen"></i></button>
+                                            <button class="btn text-light rounded-circle bg-danger transh" type="button"><i class="fa-solid fa-trash-can"></i></button>
+                                        </td>
+
+
+                                    </tr>
+                                )}
+                            </tbody>
+                        </table>
                     </div>
-                    {Data.map((d) =>
-                        <div className="row bg-white text-black border p-1 dataCount">
-                            <div className="col-1 dataCount">{d.id}</div>
-                            <div className="col-2 dataCount">{d.names}</div>
-                            <div className="col-2 dataCount">{d.Address}</div>
-                            <div className="col-2 dataCount">{d.Mobile_no}</div>
-                            <div className="col-2 dataCount">{d.Gender}</div>
-                            <div className="col-2 dataCount">{d.Salary}</div>
-                            <div className="col-1">
-                                <div class="d-grid gap-1 d-md-flex justify-content-md-center ">
-                                    <button class="btn btn-primary  rounded-circle pen " type="button"><i class="fa-solid fa-pen"></i></button>
-                                    <button class="btn text-light rounded-circle bg-danger transh" type="button"><i class="fa-solid fa-trash-can"></i></button>
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
-                    )}
-
-
-
                 </div>
-         
-
-
             </div>
 
         </div>
+
 
     )
 }

@@ -6,10 +6,11 @@
 
 .main {
     background-color: black;
-    height: 500vh;
+    height: 300vh;
     /* width: 20%; */
     float: left;
-    color: white;
+    /* color: white; */
+cursor: pointer;
 
 
 
@@ -22,9 +23,7 @@
 
 }
 
-li {
-    background-color: rgb(40, 37, 37);
-}
+
 
 
 
@@ -36,7 +35,7 @@ ul {
 a {
     text-decoration: none;
     color: white;
-    padding: 6px;
+    /* padding: 6px; */
 
 
 
@@ -73,8 +72,52 @@ ul li {
     display: inline-block;
     /* margin: 10px 0px; */
     padding: 10px;
-
-
-    background-color: rgb(40, 37, 37);
     width: 100%;
 }
+
+.sidebar {
+    background-color: black;
+    color: #fff;
+    height: 100vh;
+    width: 400px;
+    transition: all 0.5s;
+    
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.bars {
+    display: flex;
+    font-size: 25px;
+    /* margin-left: 10px !important; */
+}
+
+.link div{
+    display: flex;
+    color: #fff;
+    padding: 10px 0;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.link div:hover{
+    background-color: lightskyblue;
+    color: black;
+    transition: all 0.5s;
+}
+.actice{
+    background-color: lightskyblue;
+    color: black;
+}
+.link_text{
+    font-size: 20px;
+}
+

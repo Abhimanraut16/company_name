@@ -49,3 +49,27 @@ form {
    border-radius: 0 7px 7px 0;
    cursor: pointer;
 }
+
+.main--content{
+   position: relative;
+   background: #ebe9e9;
+   width: 100%;
+   padding: 1rem;
+}
+.header--wrapper .pluse{
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   border-radius: 50%;
+   background-color: tomato;
+   padding: 10px 17px;
+}
+.header--wrapper{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+
+}
+
+

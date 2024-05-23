@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
+import { FaBars, FaHome, FaServicestack, FaTh, FaUserAlt } from 'react-icons/fa'
+import { FaRegChartBar } from 'react-icons/fa6'
 import './navbar.css'
 import { Link } from 'react-router-dom';
+import { CiSettings } from 'react-icons/ci';
 
 function Navbar() {
-    const [isVisible, setIsVisible] = useState(true);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
+
+    const [isOpens, setOpen] = useState(false)
+    const toggle = () => setOpen(!isOpens)
 
     const toggleIcon = () => {
         setIsOpen(!isOpen);
@@ -14,38 +20,58 @@ function Navbar() {
 
     return (
         <div>
+
             <div className="main">
-                <ul id="sidemenu">
-                    <li className="active"><i className="fa-solid fa-house" style={{ color: '#ffffff' }} /><Link to="/">HOME</Link></li>
-                    <li onClick={toggleIcon}><i className="fa-solid fa-briefcase" style={{ color: '#ffffff', }} /><Link to="element">
-                        <span>Element </span>
-                        {isOpen ? (
-                            <i className="fas fa-chevron-right"></i>
+                <div style={{ width: isOpens ? "200px" : "50px" }} className="sidebar">
 
-                        ) : (
-                            <i className="fas fa-chevron-down"></i>
+                    <div className="top_section">
+                        <h1 style={{ display: isOpens ? "block" : "none" }} className='logo'>slide</h1>
+                        <div style={{ marginLeft: isOpens ? "50px" : "0px" }} className="bars">
+                            <FaBars onClick={toggle} />
+                        </div>
+                    </div>
+                    <div className="link">
+                        <div style={{ marginLeft: isOpens ? "50px" : "15px" }} ><FaHome className='link_text' /> <Link to={"/"} style={{ display: isOpens ? "block" : "none" }}>Home</Link> </div>
+                        <div style={{ marginLeft: isOpens ? "50px" : "15px" }}><FaRegChartBar className='link_text' />
+                            <di onClick={toggleIcon} style={{ display: isOpens ? "block" : "none" }}><Link to="element" >
+                                <span className='style={{ display: isOpens ? "block" : "none" }}>'>Element </span>
+                                {isVisible ? (
+                                    <i className="fas fa-chevron-right "></i>
 
-                        )}
+                                ) : (
+                                    <i className="fas fa-chevron-down"></i>
 
-                        {isVisible && (
-                            <>
-                                {isVisible && (
-                                    <div style={{ padding: '10px', }}>
-                                        <li><a href="">Sbu element1</a> </li>
-                                        <li><a href="">Sbu element1</a></li>
-                                        <li><a href="">Sbu element1</a></li>
-                                    </div>
                                 )}
-                            </>
-                        )}
 
-                    </Link>
+                                {isOpen && (
+                                    <>
+                                        {isOpen && (
+                                            <div   className='element' style={{ display: isOpens ? "block" : "none" }}>
+                                                <Link to=""> element1</Link>
+                                                <Link to=""> element1</Link>
+                
+                                            </div>
+                                        )}
+                                    </>
+                                )}
 
-                    </li>
-                    <li><i className="fa-brands fa-servicestack" style={{ color: '#ffffff' }} /><Link to="service">SERVICES</Link></li>
-                    <li><i className="fa-solid fa-gear" 
-                        style={{ color: '#fbfcfe' }} /><Link to="setting">Setting</Link></li>
-                </ul>
+                            </Link>
+
+                            </di>
+
+
+                        </div>
+                        <div style={{ marginLeft: isOpens ? "50px" : "15px" }}><FaServicestack className='link_text' /><Link to={"/"} style={{ display: isOpens ? "block" : "none" }}>Services</Link> </div>
+                        <div style={{ marginLeft: isOpens ? "50px" : "15px" }}><CiSettings className='link_text' /><Link to={"/"} style={{ display: isOpens ? "block" : "none" }}>Setting</Link> </div>
+        
+
+
+                    </div>
+
+
+
+                </div>
+
             </div>
         </div>
 
@@ -54,4 +80,13 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+
+
+
+
+
+
+
 
