@@ -1,7 +1,6 @@
 import React from 'react'
 import './main.css'
 import Data from '../Data'
-import './media.css'
 
 function Main() {
     return (
