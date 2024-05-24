@@ -12,7 +12,7 @@ function MemberDetail() {
                             <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-info" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
-                        <div className=" d-grid grid gap-3">
+                        <div className=" ">
                             <button type="button" className=" btn btn-outline-primary bg-primary text-light rounded-circle"> <i class="fa-solid fa-plus"></i></button>
                         </div>
 

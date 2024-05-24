@@ -31,7 +31,7 @@ function Main() {
                                         <td>{d.Mobile_no}</td>
                                         <td>{d.Gender}</td>
                                         <td>{d.Salary}</td>
-                                        <td className='d-grid gap-1 d-md-flex justify-content-md-center'>
+                                        <td className='d-flex gap-1 d-md-flex '>
                                             <button class="btn btn-primary  rounded-circle pen " type="button"><i class="fa-solid fa-pen"></i></button>
                                             <button class="btn text-light rounded-circle bg-danger transh" type="button"><i class="fa-solid fa-trash-can"></i></button>
                                         </td>
